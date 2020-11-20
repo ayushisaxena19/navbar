@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after psuedo selectors and shadow</title>
+    <style>
+        
+        header::before{content:"";
+            background:url('https://source.unsplash.com/user/erondu/1600x900') ;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width:100vw;
+            height: 100vh;
+            z-index: -1;opacity: .5;
+
+
+        }
+        ul {
+            display: flex;
+        }li{
+            list-style: none;
+            margin:10px 30px; 
+            padding:5px;
+            color:white;
+            font-size: 20px;
+        }
+        section>p{
+            display: flex;
+            border: 2px solid black;
+            color: white;
+            justify-content: center;
+            align-content: center;
+            margin: 10px 200px;
+            padding: 20px;
+        }h1{
+            display: flex;
+            color: white;
+            width: 400px;
+            height: 100px;
+            justify-content: center;
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>home1</li>
+                <li>home1</li>
+                <li>home1</li>
+                <li>home1</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>welocome to here</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum magni, ratione minima accusamus porro amet
+            delectus neque architecto enim minus voluptatibus molestias voluptate non voluptatum doloremque. Doloribus
+            sequi, neque rem earum ad in velit officiis maiores, placeat cupiditate sed aliquam! In magnam commodi
+            doloribus.
+
+        </p>
+    </section>
+</body>
+
+</html>

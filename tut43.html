@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid auto-fit minmax</title>
+    <style>
+.container{
+    display: grid;
+    grid-gap: 2rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+.box{
+    border: 2px solid black;
+    background: rosybrown;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">itmem1</div>
+        <div class="box">itmem2</div>
+        <div class="box">itmem3</div>
+        <div class="box">itmem4</div>
+        <div class="box">itmem5</div>
+        <div class="box">itmem6</div>
+        <div class="box">itmem7</div>
+        <div class="box">itmem8</div>
+        <div class="box">itmem9</div>
+        <div class="box">itmem10</div>
+        <div class="box">itmem11</div>
+        <div class="box">itmem12</div>
+        <div class="box">itmem13</div>
+    </div>
+</body>
+</html>

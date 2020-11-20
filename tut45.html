@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css media query
+    </title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'aside aside aside section '
+                'footer footer footer footer';
+        }
+
+        nav,
+        aside,
+        section,
+        footer {
+            border: 2px solid grey;
+            background-color: burlywood;
+        }
+
+        nav {
+            grid-area: navbar;
+
+        }
+
+        aside {
+            grid-area: aside;
+
+        }
+
+        section {
+            grid-area: section;
+
+        }
+
+        footer {
+            grid-area: footer;
+
+        }
+
+        @media only screen and (max-width: 300px) {
+            body {
+                background-color: blue;
+
+            } .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'aside aside aside aside '
+                'footer footer footer footer';
+        }
+        section{
+            display: none;
+        }
+            span {
+                display: block;
+                text-align: center;
+
+            }
+
+        }
+
+        @media only screen and (min-width:300px) and (max-width: 500px) {
+            body {
+                background-color: rgb(29, 29, 66);
+            }
+            .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'aside aside aside aside '
+                'footer footer footer footer';
+        }
+        section{
+            display: none;
+        }
+            span {
+                display: block;
+                text-align: center;
+
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width: 800px) {
+            body {
+                background-color: rgb(172, 172, 230);
+            } .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'aside aside aside aside '
+                'footer footer footer footer';
+        }
+        section{
+            display: none;
+        }
+            span {
+                display: block;
+                text-align: center;
+
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: rgb(91, 189, 128);
+
+            }
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <span>home</span>
+            <span>contact</span>
+            <span>services</span>
+            <span>email</span>
+        </nav>
+        <aside>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo voluptatum dolore deserunt ipsa velit
+            distinctio. Porro optio nobis aspernatur voluptate impedit laborum tempora aliquam, rerum provident
+            temporibus expedita possimus autem quibusdam iure omnis, incidunt fugit dolores illo natus at nam
+            dignissimos delectus odio! Ipsa, illo quam necessitatibus recusandae ratione quis dolorem cum tenetur
+            aliquam esse, sint veritatis explicabo perspiciatis non hic nulla officia impedit beatae quidem magnam magni
+            nemo. Dolores optio labore ducimus qui, consequuntur minus, voluptatibus provident doloribus, molestiae
+            harum placeat exercitationem culpa iste molestias? Corrupti hic animi aliquid! Laboriosam totam culpa
+            explicabo at quasi. Officiis necessitatibus repellat error vel minus, nihil dolorem eum ab reiciendis
+            eligendi non natus. Quo placeat libero totam nesciunt nam quaerat illo beatae quas maiores ex, adipisci qui
+            ducimus neque harum enim fuga minus, ipsam et quisquam deleniti quia quasi eligendi? Eveniet quidem eum
+            quisquam libero debitis quis tenetur nihil. Impedit ullam, nesciunt odio eligendi perspiciatis unde ipsa
+            iusto error atque quia repellendus veniam ut nam mollitia iste sequi cum dignissimos eveniet officia,
+            tenetur laboriosam. Non repellat temporibus totam inventore nobis reprehenderit ducimus dolores recusandae,
+            ipsa cupiditate aperiam laboriosam odit laudantium ipsum illum rem ipsam at ratione expedita! Veniam quod
+            odit aut iste, eveniet rem fugiat sit asperiores, dolore esse labore quo adipisci iusto. Eum deserunt ab
+            facilis ex molestias dicta! Minima, laboriosam sequi!</aside>
+        <section>more about us </section>
+        <footer>view my mail or directlly call to 9756611688</footer>
+
+    </div>
+</body>
+
+</html>

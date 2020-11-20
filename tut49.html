@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings in js</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nostrum pariatur placeat.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam suscipit illum eveniet dolorum ducimus vel
+            eius earum et, quaerat labore aspernatur optio atque unde reiciendis tempore eum sunt placeat sapiente
+            adipisci doloremque provident veritatis dolor.</p>
+    </div>
+    <script>
+        var string = "ayushi";
+        var name = ' saxena ';
+        var message = 'be progressive';
+        console.log(string + name + message);
+        var temp = ` ${string} ${name} is a nice person " with a thought " ${message}`;
+        console.log(temp);
+        var len = name.length;
+        console.log(`length of "name" string is ${len}`);
+        console.log('hello world \\n ayushi\tand saxena')
+        var  y = new String ("this");
+        console.log(y);
+        document.getElementById('content').innerHTML='<h3> this is a heading</h3>';
+    </script>
+</body>
+
+</html>

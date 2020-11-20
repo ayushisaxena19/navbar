@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template grid area</title>
+    <style>
+        div.container{
+            display: grid;
+            grid-gap:1rem;
+            padding:1rem;
+            grid-template-areas: 
+            'navbar navbar navbar'
+            'section aside aside'
+            'read read write  ';
+            
+        }
+div.item{
+     border: 2px solid black;
+     background-color: burlywood;
+}
+#navbar{
+    grid-area: navbar;
+
+}
+#section{
+
+    grid-area: section;
+
+}
+#aside{
+ grid-area:aside ;
+}
+#read{
+    grid-area: read;
+
+}
+#write{
+    grid-area: write;
+}  #photgallery{ display: grid;
+grid-gap: 1rem;
+grid-template-areas: ;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div  class="item" id="navbar">home about contact email</div>
+        <div class="item"  id="section">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, esse odit placeat repudiandae nemo voluptatibus. Sint porro doloribus eum veniam cumque. Officiis soluta natus, veritatis suscipit vel doloremque adipisci voluptas? Facilis repellat molestiae provident esse atque cum blanditiis, quibusdam, dolores optio incidunt veniam vitae! Itaque tempore voluptatibus temporibus accusamus, dolor culpa rem debitis atque vitae nostrum!</div>
+        <div class="item"  id="aside">here we go</div>
+        <div class= "item" id="read" id="photo gallery"><img-src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fc4.wallpaperflare.com%2Fwallpaper%2F471%2F127%2F715%2Ftiger-water-green-eyes-neon-wallpaper-preview.jpg&imgrefurl=https%3A%2F%2Fwww.wallpaperflare.com%2Fpurple-and-blue-tiger-illustration-water-green-eyes-neon-animals-wallpaper-bmh&tbnid=Ehmevk5Z5SAm3M&vet=12ahUKEwi824iJ84bsAhWoHbcAHQfvBFEQMygDegUIARDWAQ..i&docid=C2HfMgQZlzlGcM&w=728&h=410&q=animals&hl=en&safe=active&ved=2ahUKEwi824iJ84bsAhWoHbcAHQfvBFEQMygDegUIARDWAQ">photo1</img-src></div>
+        <div class="item" id="write">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolor sed natus dicta impedit qui consequatur voluptate tempore, possimus recusandae in molestias exercitationem sunt vitae ipsam! Totam aperiam iure dolorem odio magnam laborum, rerum unde nihil, quasi praesentium obcaecati perspiciatis, ipsum deleniti illum assumenda quisquam ipsam veniam? Voluptatibus, tempora!</div>
+    </div>
+</body>
+</html>

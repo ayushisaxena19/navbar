@@ -1,0 +1,181 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signupf</title>
+    <style>
+        body {
+            background: rgb(77, 76, 76);
+        }a{
+            text-decoration:none;
+            color:rgb(227, 226, 238);
+            font-size:26px;
+            
+        }p a:hover{
+            font-family: cursive;
+            color: rgb(15, 8, 109);
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            color: white;
+        }
+
+        ul {
+            background: rgb(15, 1, 1);
+            overflow: auto;
+            padding: 17px 25px;
+        }
+
+        nav {
+            margin: 0px 0px;
+        }
+        nav li:hover{
+            font-size:25px;
+        }
+
+        button#search {
+            float: right;
+
+        }
+
+        .heading {
+            background: rgb(39, 122, 150);
+            text-align: center;
+            color: white;
+            margin: 0px 0px;
+
+        }
+
+        .one {
+            font-family: cursive;
+            font-size: 50px;
+            color: rgb(7, 7, 102);
+            margin: 0px 0px;
+
+        }
+
+        .two {
+            display: inline;
+            color: white;
+            margin: 0px 0px;
+        }
+
+        h3 {
+            padding-bottom: 35px;
+            margin: 0px 0px;
+            font-family: cursive;
+        }
+
+        h4,h5{
+            display: block;
+            text-align: center;
+            color: honeydew;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+       
+        .full{
+            display:block;
+           width:40%;
+           padding: 12px;
+           font-size: 20px;
+           margin: 2% auto;
+
+       
+        }.btn{display:block;
+           width:20%;
+           padding: 12px;
+           font-size: 20px;
+           margin:  2% auto;
+           background: rgb(39, 122, 150);
+           color: white ;}
+           button:hover{
+               font-size: 22px;
+               background: saddlebrown;
+               box-shadow: rgb(250, 241, 250);
+               cursor: pointer;
+           }
+           input:hover{
+               font-size: 22px;
+               background: rgb(136, 75, 95);
+               box-shadow: rgb(250, 241, 250);
+               cursor: pointer;
+           }
+
+        span.half{
+            display:block;
+           width:50%;
+           margin: auto;
+           text-align:center;
+          
+         
+           }p{
+               text-align: center;
+           }
+
+        input#half{
+          display: inline-block;
+          width: 36%;
+          margin:  10px 2% 10px 2% ;
+          font-size: 20px;
+          padding: 12px;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="landingpage.html">Home</a></li>
+            <BUTTON id="search">Search here</BUTTON>
+        </ul>
+    </nav>
+    <div class="heading">
+
+        <span class="one">join</span>
+        <h1 class="two">hilton honours</h1>
+        <h3>and earn points towards free nights </h3>
+    </div>
+    <div>
+        <h4>Enroll in hilton honours and you will automatically be signed up for promotion</h4>
+    </div>
+    <div>
+        <form action="backend.php">
+            <span class="half"> <input id="half" type="text" name="first name" id="my1stname"
+                    placeholder="first name*">
+
+                <input id="half" type="text" name="last name" id="mylastname" placeholder="last name*"></span>
+
+            <input class="full" type="text" name="address" id="myaddress" placeholder="address*">
+
+            <input class="full" type="text" name="address2" id="myaddress2" placeholder="Address2*">
+
+            <span class="half"><input id="half" type="text" name="country" id="mycountry" placeholder="country*">
+
+                <input id="half" type="text" name="state" id="mystate" placeholder="state*">
+                <input id="half" type="text" name="city" id="mycity" placeholder="city8">
+                <input id="half" type="text" name="pin code" id="mypincode" placeholder="pincode"></span>
+
+
+            <input class="full" type="text" name="phone" id="mynumber" placeholder="phone no.*">
+
+
+            <input class="full" type="text" name="email" id="myemail" placeholder="email-id*">
+
+
+
+        </form>
+    </div>
+    <h5>*Required</h5>
+    <button class="btn"> Join For Free</button>
+    <h5 >Already have an account? </h5>
+    <p><A HREF="">LOG-IN</A></p>
+</body>
+
+</html>
